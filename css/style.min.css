@@ -198,7 +198,7 @@ body {
         -webkit-box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.16);
                 box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.16); }
         .account .drop-list-item:hover::before {
-          content: ' ';
+          content: " ";
           position: absolute;
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
@@ -242,26 +242,28 @@ body {
   top: 805px;
   z-index: -1; }
 
+.fgm-main .container {
+  position: relative; }
+
 .parallax1 {
   position: absolute;
-  right: -1032px;
-  bottom: -343px;
+  right: -349px;
+  top: -200px;
   z-index: -2;
-  height: 1000px;
-  width: 2000px;
+  height: 1020px;
+  width: 1240px;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-size: 793px 755px;
   background-image: url(../images/boy.png); }
 
 .parallax2 {
   position: absolute;
-  bottom: -343px;
-  right: -1020px;
-  height: 1000px;
-  width: 2000px;
+  top: 354px;
+  right: -197px;
+  height: 420px;
+  width: 1635px;
   background-image: url(../images/tuman.png);
   background-repeat: no-repeat;
-  overflow: hidden;
   z-index: -2; }
 
 .fgm-main {
@@ -430,6 +432,8 @@ h2 {
       text-align: right;
       letter-spacing: 0.02em;
       color: #1f1f1f; }
+  .footer .social-links {
+    margin-left: 56px; }
 
 .rules_body .exammple {
   height: 600px;
@@ -1008,3 +1012,64 @@ h2 {
             transform: translateY(3px);
     margin-left: 30px;
     cursor: pointer; }
+
+@media (max-width: 2265px) {
+  .parallax1 {
+    right: -289px; } }
+
+@media (max-width: 2115px) {
+  .parallax1 {
+    right: -183px;
+    top: -200px;
+    height: 1020px;
+    width: 1144px;
+    background-size: 763px 737px; } }
+
+@media (max-width: 1904px) {
+  .parallax1 {
+    right: -71px;
+    top: -200px;
+    height: 1020px;
+    width: 997px;
+    background-size: 740px 711px; }
+  .parallax2 {
+    right: -91px;
+    width: 1630px; } }
+
+@media (max-width: 1764px) {
+  .parallax1 {
+    right: 44px;
+    height: 1020px;
+    width: 828px;
+    background-size: 698px 659px; } }
+
+@media (max-width: 1564px) {
+  .parallax2 {
+    position: absolute;
+    top: 354px;
+    right: 0;
+    height: 420px;
+    width: 1000px; }
+  .event-block-inner {
+    grid-template-columns: 336px 336px; } }
+
+@media (max-width: 1364px) {
+  .beready-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .beready-inner-left {
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .beready-inner-right {
+    margin: 0 auto;
+    margin-top: 30px; } }
+
+@media (max-width: 1190px) {
+  .parallax2 {
+    position: absolute;
+    top: 354px;
+    right: 0;
+    height: 420px;
+    width: 1000px; }
+  .event-block-inner {
+    grid-template-columns: 336px; } }
