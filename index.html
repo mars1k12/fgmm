@@ -200,6 +200,11 @@
                     data-parsley-equalto-message="Не совпадают пароли" data-parsley-equalto="#password" required>
             </div>
 
+            <div class="form-group">
+                <input class="custom-checkbox" type="checkbox" id="agree-chk" name="agree-chk" required>
+                <label for="agree-chk">Я соглашаюсь с условиями</label>
+            </div>
+
             <button type="submit" class="btn btn-reg">Зарегестрироваться</button>
         </form>
 
@@ -212,6 +217,12 @@
             <p>+</p>
         </div>
     </div>
+
+
+    <ul class="parsley-errors-list filled" id="parsley-id-5">
+        <li class="parsley-required">Это поле обязательно</li>
+      </ul>
+
 
 
     <div class="bg-overlay"></div>

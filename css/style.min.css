@@ -239,7 +239,7 @@ body {
   width: 100%;
   height: 277px;
   position: absolute;
-  top: 805px;
+  top: 794px;
   z-index: -1; }
 
 .fgm-main .container {
@@ -580,6 +580,8 @@ h2 {
 
 .form-all {
   padding: 5px 65px 25px; }
+  .form-all .form-group {
+    margin-top: 35px; }
   .form-all label {
     display: block;
     font-weight: normal;
@@ -587,7 +589,6 @@ h2 {
     line-height: 12px;
     letter-spacing: 0.02em;
     color: #1f1f1f;
-    margin-top: 35px;
     margin-bottom: 15px; }
   .form-all input {
     border: none;
@@ -599,6 +600,53 @@ h2 {
   .form-all input:active,
   .form-all input:focus {
     border-bottom: 2px solid #16b296; }
+  .form-all .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .form-all .custom-checkbox + label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .form-all .custom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%; }
+  .form-all .custom-checkbox:checked + label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
+  .form-all .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #b3d7ff; }
+  .form-all .custom-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff; }
+  .form-all .custom-checkbox:focus + label::before {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+  .form-all .custom-checkbox:focus:not(:checked) + label::before {
+    border-color: #80bdff; }
+  .form-all .custom-checkbox:disabled + label::before {
+    background-color: #e9ecef; }
   .form-all .btn-login {
     background: #16b296;
     -webkit-box-shadow: 0px 10px 40px -12px rgba(25, 38, 132, 0.16);
@@ -680,7 +728,6 @@ h2 {
     line-height: 12px;
     letter-spacing: 0.02em;
     color: #1f1f1f;
-    margin-top: 35px;
     margin-bottom: 15px; }
   .regform input {
     border: none;
@@ -723,6 +770,12 @@ h2 {
   font-size: 38px;
   cursor: pointer;
   z-index: 5; }
+
+.parsley-errors-list li.parsley-required {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #941341; }
 
 .data-event {
   margin-top: 150px;
@@ -818,7 +871,8 @@ h2 {
       position: absolute;
       width: 100%;
       height: 100%;
-      z-index: 1; }
+      z-index: 1;
+      border-radius: 4px; }
     .event-block-inner-item .txt-block {
       position: relative;
       z-index: 2;
