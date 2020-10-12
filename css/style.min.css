@@ -239,7 +239,7 @@ body {
   width: 100%;
   height: 277px;
   position: absolute;
-  top: 794px;
+  top: 803px;
   z-index: -1; }
 
 .fgm-main .container {
@@ -371,6 +371,94 @@ h2 {
         -webkit-transform: translateY(-120px);
             -ms-transform: translateY(-120px);
                 transform: translateY(-120px); }
+
+.image-carousel {
+  margin-top: -60px;
+  margin-bottom: 60px; }
+  .image-carousel .carousel-wrap {
+    padding: 0 5%;
+    width: 100%;
+    position: relative; }
+    .image-carousel .carousel-wrap #owl-first {
+      margin-bottom: 30px; }
+    .image-carousel .carousel-wrap.item {
+      position: relative;
+      z-index: 100;
+      width: 585px;
+      height: 382px; }
+    .image-carousel .carousel-wrap img {
+      width: 585px;
+      height: 382px;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+#image-viewer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px; }
+
+#image-viewer .modal-content {
+  width: 100%;
+  height: auto; }
+
+.modal-content {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+#image-viewer .close {
+  position: absolute;
+  top: 115px;
+  right: 135px;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
 
 .become-one {
   background-color: #282e32;
